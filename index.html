@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Beachfront Villa | Palm Jumeirah, Dubai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="luxury-logo">PALM RESIDENCES</div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">PALM RESIDENCES</div>
+            <div class="nav-menu">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#investment" class="nav-link">Investment</a>
+                <button class="nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    <i class="fab fa-whatsapp"></i> Inquire Now
+                </button>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-video-container">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075')"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053')"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">⭐</span>
+                EXCLUSIVE BEACHFRONT
+            </div>
+            
+           
+            
+           
+            
+         
+
+            <!-- Currency Selector Hero -->
+            <div class="hero-price-section">
+                <div class="currency-switcher">
+                    <button class="currency-btn active" data-currency="AED" data-price="85000000">
+                        <span class="currency-flag">🇦🇪</span>
+                        <span class="currency-code">AED</span>
+                    </button>
+                    <button class="currency-btn" data-currency="USD" data-price="23140777">
+                        <span class="currency-flag">🇺🇸</span>
+                        <span class="currency-code">USD</span>
+                    </button>
+                    <button class="currency-btn" data-currency="GBP" data-price="18313981">
+                        <span class="currency-flag">🇬🇧</span>
+                        <span class="currency-code">GBP</span>
+                    </button>
+                    <button class="currency-btn" data-currency="EUR" data-price="21393204">
+                        <span class="currency-flag">🇪🇺</span>
+                        <span class="currency-code">EUR</span>
+                    </button>
+                </div>
+                
+                <div class="hero-price">
+                    <span class="price-currency">AED</span>
+                    <span class="price-amount" id="heroPrice">85,000,000</span>
+                </div>
+                <div class="price-note">Freehold | Ready to Move</div>
+            </div>
+
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Schedule Private Viewing</span>
+                </button>
+                <button class="btn-secondary" id="virtualTourBtn">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Virtual Tour</span>
+                </button>
+            </div>
+
+            
+                
+            </div>
+        </div>
+
+       
+
+        <!-- Slider Controls -->
+        <div class="slider-nav">
+            <button class="slider-arrow prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+            <button class="slider-arrow next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <div class="info-bar">
+        <div class="info-bar-content">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Palm Jumeirah Frond G, Dubai</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-home"></i>
+                <span>Luxury Beachfront Villa</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Ready to Move In</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-certificate"></i>
+                <span>Freehold Ownership</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section class="section overview" id="overview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">PROPERTY OVERVIEW</span>
+                <h2 class="section-title">
+                    A Symphony of <span class="highlight">Luxury & Design</span>
+                </h2>
+            </div>
+
+            <div class="overview-grid">
+                <div class="overview-content fade-in">
+                    <p class="lead-text">
+                        This extraordinary beachfront residence redefines contemporary luxury living on one of the world's most prestigious addresses.
+                    </p>
+                    
+                    <p class="body-text">
+                        Spanning over 12,500 square feet of meticulously designed living space, this architectural masterpiece seamlessly blends cutting-edge design with timeless elegance. Floor-to-ceiling windows frame breathtaking views of the Arabian Gulf, while the open-concept layout creates a harmonious flow between indoor and outdoor living.
+                    </p>
+
+                    <p class="body-text">
+                        Every detail has been carefully curated to deliver an unparalleled living experience. From the imported Italian marble flooring to the smart home automation system, this property represents the pinnacle of luxury real estate in Dubai.
+                    </p>
+
+                    <div class="property-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <div class="highlight-title">Award-Winning Architecture</div>
+                                <div class="highlight-desc">Designed by renowned international architects</div>
+                            </div>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <div class="highlight-title">Private Beach Access</div>
+                                <div class="highlight-desc">150 feet of pristine white sand waterfront</div>
+                            </div>
+                        </div>
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <div class="highlight-title">Eco-Luxury Features</div>
+                                <div class="highlight-desc">Solar panels, rainwater harvesting, smart climate</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-specs">
+                        <div class="spec-box">
+                            <div class="spec-number">2023</div>
+                            <div class="spec-label">Year Built</div>
+                        </div>
+                        <div class="spec-box">
+                            <div class="spec-number">12,500</div>
+                            <div class="spec-label">Interior Sq Ft</div>
+                        </div>
+                        <div class="spec-box">
+                            <div class="spec-number">8,000</div>
+                            <div class="spec-label">Outdoor Sq Ft</div>
+                        </div>
+                        <div class="spec-box">
+                            <div class="spec-number">150</div>
+                            <div class="spec-label">Beach Frontage (ft)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-media fade-in">
+                    <div class="media-main">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1000" alt="Luxury Living Room">
+                        <div class="media-badge">
+                            <i class="fas fa-award"></i>
+                            International Design Award 2023
+                        </div>
+                    </div>
+                    
+                    <div class="media-grid">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800" alt="Gourmet Kitchen">
+                        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=800" alt="Master Suite">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header center fade-in">
+                <span class="section-tag">PREMIUM AMENITIES</span>
+                <h2 class="section-title">
+                    Uncompromising <span class="highlight">Excellence</span>
+                </h2>
+            </div>
+
+            <div class="features-showcase">
+                <!-- Feature Tabs -->
+                <div class="feature-tabs fade-in">
+                    <button class="feature-tab active" data-feature="interior">
+                        <i class="fas fa-couch"></i>
+                        <span>Interior</span>
+                    </button>
+                    <button class="feature-tab" data-feature="exterior">
+                        <i class="fas fa-swimming-pool"></i>
+                        <span>Exterior</span>
+                    </button>
+                    <button class="feature-tab" data-feature="smart">
+                        <i class="fas fa-brain"></i>
+                        <span>Smart Home</span>
+                    </button>
+                    <button class="feature-tab" data-feature="wellness">
+                        <i class="fas fa-spa"></i>
+                        <span>Wellness</span>
+                    </button>
+                </div>
+
+                <!-- Feature Content -->
+                <div class="feature-content-area">
+                    <!-- Interior Features -->
+                    <div class="feature-panel active" id="interior">
+                        <div class="feature-grid">
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h3 class="feature-card-title">Gourmet Kitchen</h3>
+                                <p class="feature-card-desc">Miele appliances, marble island, wine cellar for 500+ bottles</p>
+                                <div class="feature-card-meta">Italian Design</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                                <h3 class="feature-card-title">Master Suite</h3>
+                                <p class="feature-card-desc">1,800 sq ft with panoramic ocean views, private terrace, spa bathroom</p>
+                                <div class="feature-card-meta">Ocean Facing</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-film"></i>
+                                </div>
+                                <h3 class="feature-card-title">Private Cinema</h3>
+                                <p class="feature-card-desc">12-seat theater, 4K projection, Dolby Atmos sound system</p>
+                                <div class="feature-card-meta">Premium Audio</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <h3 class="feature-card-title">Library & Study</h3>
+                                <p class="feature-card-desc">Custom woodwork, built-in shelving, golf course views</p>
+                                <div class="feature-card-meta">Mahogany Finish</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-mirror"></i>
+                                </div>
+                                <h3 class="feature-card-title">Walk-in Closets</h3>
+                                <p class="feature-card-desc">His & hers closets with custom lighting and display cases</p>
+                                <div class="feature-card-meta">Designer Storage</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <h3 class="feature-card-title">Statement Fireplaces</h3>
+                                <p class="feature-card-desc">3 designer fireplaces including outdoor gas feature</p>
+                                <div class="feature-card-meta">Custom Design</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exterior Features -->
+                    <div class="feature-panel" id="exterior">
+                        <div class="feature-grid">
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-swimming-pool"></i>
+                                </div>
+                                <h3 class="feature-card-title">Infinity Pool</h3>
+                                <p class="feature-card-desc">75-foot heated pool with integrated spa & underwater lighting</p>
+                                <div class="feature-card-meta">Temperature Controlled</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-umbrella-beach"></i>
+                                </div>
+                                <h3 class="feature-card-title">Private Beach</h3>
+                                <p class="feature-card-desc">150 feet of pristine beachfront with cabana & fire pit</p>
+                                <div class="feature-card-meta">Exclusive Access</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-tree"></i>
+                                </div>
+                                <h3 class="feature-card-title">Landscaped Gardens</h3>
+                                <p class="feature-card-desc">Tropical gardens with water features & outdoor lighting</p>
+                                <div class="feature-card-meta">Award Winning</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <h3 class="feature-card-title">Smart Garage</h3>
+                                <p class="feature-card-desc">3-car climate-controlled garage with EV charging</p>
+                                <div class="feature-card-meta">Tesla Chargers</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-solar-panel"></i>
+                                </div>
+                                <h3 class="feature-card-title">Solar Energy</h3>
+                                <p class="feature-card-desc">50kW solar array with battery storage system</p>
+                                <div class="feature-card-meta">Eco-Luxury</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h3 class="feature-card-title">Guest House</h3>
+                                <p class="feature-card-desc">Separate 2-bedroom guest quarters with kitchenette</p>
+                                <div class="feature-card-meta">Private Entry</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smart Home Features -->
+                    <div class="feature-panel" id="smart">
+                        <div class="feature-grid">
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h3 class="feature-card-title">Full Automation</h3>
+                                <p class="feature-card-desc">Control lighting, climate, security from anywhere globally</p>
+                                <div class="feature-card-meta">Control4 System</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3 class="feature-card-title">Advanced Security</h3>
+                                <p class="feature-card-desc">24/7 monitoring, biometric access, CCTV with AI detection</p>
+                                <div class="feature-card-meta">Military Grade</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-temperature-high"></i>
+                                </div>
+                                <h3 class="feature-card-title">Climate Zones</h3>
+                                <p class="feature-card-desc">Individual temperature control for each room</p>
+                                <div class="feature-card-meta">Energy Efficient</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h3 class="feature-card-title">Smart Lighting</h3>
+                                <p class="feature-card-desc">Automated scenes, circadian rhythm sync, voice control</p>
+                                <div class="feature-card-meta">Lutron System</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                                <h3 class="feature-card-title">Whole-Home Audio</h3>
+                                <p class="feature-card-desc">Sonos speakers in every room including outdoor areas</p>
+                                <div class="feature-card-meta">Premium Sound</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h3 class="feature-card-title">Video Intercom</h3>
+                                <p class="feature-card-desc">HD video entry system with mobile access</p>
+                                <div class="feature-card-meta">Facial Recognition</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wellness Features -->
+                    <div class="feature-panel" id="wellness">
+                        <div class="feature-grid">
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <h3 class="feature-card-title">Private Gym</h3>
+                                <p class="feature-card-desc">Professional equipment, mirrored walls, ocean views</p>
+                                <div class="feature-card-meta">Technogym</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-spa"></i>
+                                </div>
+                                <h3 class="feature-card-title">Spa Suite</h3>
+                                <p class="feature-card-desc">Sauna, steam room, massage room with ocean views</p>
+                                <div class="feature-card-meta">5-Star Resort</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <h3 class="feature-card-title">Yoga Studio</h3>
+                                <p class="feature-card-desc">Dedicated meditation space with garden views</p>
+                                <div class="feature-card-meta">Zen Design</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-hot-tub"></i>
+                                </div>
+                                <h3 class="feature-card-title">Jacuzzi</h3>
+                                <p class="feature-card-desc">8-person outdoor jacuzzi with waterfall feature</p>
+                                <div class="feature-card-meta">Hydrotherapy</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <h3 class="feature-card-title">Water Purification</h3>
+                                <p class="feature-card-desc">Whole-home filtration & alkaline water system</p>
+                                <div class="feature-card-meta">Health Focused</div>
+                            </div>
+
+                            <div class="feature-card fade-in">
+                                <div class="feature-card-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <h3 class="feature-card-title">Air Quality</h3>
+                                <p class="feature-card-desc">HEPA filtration, UV purification, humidity control</p>
+                                <div class="feature-card-meta">Medical Grade</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container-fluid">
+            <div class="section-header center fade-in">
+                <span class="section-tag">VISUAL JOURNEY</span>
+                <h2 class="section-title">
+                    Experience <span class="highlight">Timeless Beauty</span>
+                </h2>
+            </div>
+
+            <div class="gallery-masonry fade-in">
+                <div class="gallery-item tall">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1000" alt="Living Room" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Living Room</div>
+                        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800" alt="Kitchen" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Gourmet Kitchen</div>
+                        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1000" alt="Terrace" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Ocean View Terrace</div>
+                        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=800" alt="Bedroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Master Bedroom</div>
+                        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item tall">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=800" alt="Bathroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Spa Bathroom</div>
+                        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560185127-6a7e4f2a9c0b?q=80&w=800" alt="Pool" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Infinity Pool</div>
+                        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide">
+                    <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1000" alt="Garden" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Landscaped Gardens</div>
+                        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?q=80&w=800" alt="Gym" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-title">Private Gym</div>
+                        <div class="gallery-zoom"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-cta">
+                <button class="btn-outline">
+                    <i class="fas fa-images"></i>
+                    View All 62 Photos
+                </button>
+                <button class="btn-outline" id="virtual360">
+                    <i class="fas fa-vr-cardboard"></i>
+                    360° Virtual Tour
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Calculator Section -->
+    <section class="section investment-section" id="investment">
+        <div class="container">
+            <div class="section-header center fade-in">
+                <span class="section-tag">FINANCIAL ANALYSIS</span>
+                <h2 class="section-title">
+                    Smart <span class="highlight">Investment Opportunity</span>
+                </h2>
+            </div>
+
+            <div class="investment-container">
+                <!-- ROI Calculator -->
+                <div class="calculator-card fade-in">
+                    <div class="calculator-header">
+                        <div class="calculator-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="calculator-title">Investment Calculator</h3>
+                            <p class="calculator-subtitle">Project your returns over time</p>
+                        </div>
+                    </div>
+
+                    <div class="calculator-body">
+                        <div class="input-group">
+                            <label class="input-label">Purchase Price</label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">AED</span>
+                                <input type="text" class="input-field" id="purchasePrice" value="85,000,000" readonly>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">Expected Monthly Rent</label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">AED</span>
+                                <input type="text" class="input-field" id="monthlyRent" value="350,000">
+                            </div>
+                            <div class="input-hint">Typical for similar properties: AED 320K - 380K</div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">Annual Appreciation Rate</label>
+                            <div class="input-wrapper">
+                                <input type="range" class="slider" id="appreciationRate" min="0" max="15" value="6" step="0.5">
+                                <span class="slider-value" id="appreciationValue">6.0%</span>
+                            </div>
+                            <div class="input-hint">Dubai average: 5-8% per annum</div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">Investment Period</label>
+                            <div class="input-wrapper">
+                                <input type="range" class="slider" id="investmentPeriod" min="1" max="15" value="5">
+                                <span class="slider-value" id="periodValue">5 Years</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-calculate" onclick="calculateROI()">
+                            <i class="fas fa-calculator"></i>
+                            Calculate Returns
+                        </button>
+                    </div>
+
+                    <div class="calculator-results" id="calculatorResults" style="display: none;">
+                        <div class="results-header">
+                            <h4>Your Projected Returns</h4>
+                        </div>
+
+                        <div class="results-grid">
+                            <div class="result-item highlight">
+                                <div class="result-label">Total ROI</div>
+                                <div class="result-value" id="totalROI">--</div>
+                            </div>
+
+                            <div class="result-item">
+                                <div class="result-label">Annual Rental Yield</div>
+                                <div class="result-value" id="rentalYield">--</div>
+                            </div>
+
+                            <div class="result-item">
+                                <div class="result-label">Property Value After <span id="yearsLabel">5</span> Years</div>
+                                <div class="result-value" id="futureValue">--</div>
+                            </div>
+
+                            <div class="result-item">
+                                <div class="result-label">Total Rental Income</div>
+                                <div class="result-value" id="totalRental">--</div>
+                            </div>
+
+                            <div class="result-item">
+                                <div class="result-label">Capital Gain</div>
+                                <div class="result-value" id="capitalGain">--</div>
+                            </div>
+
+                            <div class="result-item">
+                                <div class="result-label">Total Profit</div>
+                                <div class="result-value profit" id="totalProfit">--</div>
+                            </div>
+                        </div>
+
+                        <div class="results-chart">
+                            <canvas id="roiChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mortgage Calculator -->
+                <div class="calculator-card fade-in">
+                    <div class="calculator-header">
+                        <div class="calculator-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div>
+                            <h3 class="calculator-title">Mortgage Calculator</h3>
+                            <p class="calculator-subtitle">Estimate your monthly payments</p>
+                        </div>
+                    </div>
+
+                    <div class="calculator-body">
+                        <div class="input-group">
+                            <label class="input-label">Property Price</label>
+                            <div class="input-wrapper">
+                                <span class="input-prefix">AED</span>
+                                <input type="text" class="input-field" id="mortgagePrice" value="85,000,000" readonly>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">Down Payment</label>
+                            <div class="input-wrapper">
+                                <input type="range" class="slider" id="downPayment" min="10" max="50" value="25">
+                                <span class="slider-value" id="downPaymentValue">25%</span>
+                            </div>
+                            <div class="input-hint">Minimum: 25% for expats, 15% for UAE nationals</div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">Interest Rate</label>
+                            <div class="input-wrapper">
+                                <input type="range" class="slider" id="interestRate" min="2" max="7" value="3.99" step="0.01">
+                                <span class="slider-value" id="interestValue">3.99%</span>
+                            </div>
+                            <div class="input-hint">Current UAE rates: 3.5% - 4.5%</div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">Loan Period</label>
+                            <div class="input-wrapper">
+                                <input type="range" class="slider" id="loanPeriod" min="5" max="25" value="20">
+                                <span class="slider-value" id="loanPeriodValue">20 Years</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-calculate" onclick="calculateMortgage()">
+                            <i class="fas fa-calculator"></i>
+                            Calculate Payment
+                        </button>
+                    </div>
+
+                    <div class="calculator-results" id="mortgageResults" style="display: none;">
+                        <div class="results-header">
+                            <h4>Your Mortgage Breakdown</h4>
+                        </div>
+
+                        <div class="mortgage-payment">
+                            <div class="payment-label">Estimated Monthly Payment</div>
+                            <div class="payment-amount" id="monthlyPayment">--</div>
+                        </div>
+
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <div class="result-label">Down Payment</div>
+                                <div class="result-value" id="downPaymentAmount">--</div>
+                            </div>
+
+                            <div class="result-item">
+                                <div class="result-label">Loan Amount</div>
+                                <div class="result-value" id="loanAmount">--</div>
+                            </div>
+
+                            <div class="result-item">
+                                <div class="result-label">Total Interest</div>
+                                <div class="result-value" id="totalInterest">--</div>
+                            </div>
+
+                            <div class="result-item">
+                                <div class="result-label">Total Payment</div>
+                                <div class="result-value" id="totalPayment">--</div>
+                            </div>
+                        </div>
+
+                        <div class="mortgage-breakdown">
+                            <div class="breakdown-item">
+                                <div class="breakdown-bar">
+                                    <div class="breakdown-fill principal" id="principalBar"></div>
+                                    <div class="breakdown-fill interest" id="interestBar"></div>
+                                </div>
+                            </div>
+                            <div class="breakdown-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color principal"></span>
+                                    <span>Principal: <span id="principalPercent">--</span>%</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color interest"></span>
+                                    <span>Interest: <span id="interestPercent">--</span>%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Highlights -->
+            <div class="investment-highlights fade-in">
+                <h3 class="highlights-title">Why This is a Smart Investment</h3>
+                <div class="highlights-grid">
+                    <div class="highlight-box">
+                        <div class="highlight-stat">5.2%</div>
+                        <div class="highlight-label">Annual Rental Yield</div>
+                        <div class="highlight-desc">Above Dubai average of 4.5%</div>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-stat">15%</div>
+                        <div class="highlight-label">Price Growth (3 Years)</div>
+                        <div class="highlight-desc">Palm Jumeirah appreciation</div>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-stat">0%</div>
+                        <div class="highlight-label">Capital Gains Tax</div>
+                        <div class="highlight-desc">Tax-free property ownership</div>
+                    </div>
+                    <div class="highlight-box">
+                        <div class="highlight-stat">100%</div>
+                        <div class="highlight-label">Freehold Ownership</div>
+                        <div class="highlight-desc">Full ownership rights</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section location-section">
+        <div class="container">
+            <div class="section-header center fade-in">
+                <span class="section-tag">PRIME LOCATION</span>
+                <h2 class="section-title">
+                    The Pinnacle of <span class="highlight">Prestige</span>
+                </h2>
+            </div>
+
+            <div class="location-content">
+                <div class="map-container fade-in">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28857.743810383847!2d55.11968987431642!3d25.112201700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cad6e1ce28f%3A0x37205b7b9d4b7c1!2sPalm%20Jumeirah%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <div class="map-overlay">
+                        <button class="map-btn" onclick="openInMaps()">
+                            <i class="fas fa-directions"></i>
+                            Get Directions
+                        </button>
+                    </div>
+                </div>
+
+                <div class="location-info fade-in">
+                    <h3 class="location-title">World-Class Surroundings</h3>
+                    <p class="location-desc">
+                        Positioned on the most sought-after frond of Palm Jumeirah, this property offers unrivaled access to Dubai's finest destinations.
+                    </p>
+
+                    <div class="proximity-list">
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-plane-departure"></i>
+                            </div>
+                            <div class="proximity-content">
+                                <div class="proximity-name">Dubai International Airport</div>
+                                <div class="proximity-distance">25 minutes</div>
+                            </div>
+                        </div>
+
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="proximity-content">
+                                <div class="proximity-name">Downtown Dubai & Burj Khalifa</div>
+                                <div class="proximity-distance">20 minutes</div>
+                            </div>
+                        </div>
+
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="proximity-content">
+                                <div class="proximity-name">The Pointe & Nakheel Mall</div>
+                                <div class="proximity-distance">5 minutes</div>
+                            </div>
+                        </div>
+
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="proximity-content">
+                                <div class="proximity-name">Atlantis The Palm & Dining</div>
+                                <div class="proximity-distance">8 minutes</div>
+                            </div>
+                        </div>
+
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="proximity-content">
+                                <div class="proximity-name">Top International Schools</div>
+                                <div class="proximity-distance">15 minutes</div>
+                            </div>
+                        </div>
+
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <div class="proximity-content">
+                                <div class="proximity-name">American Hospital Dubai</div>
+                                <div class="proximity-distance">18 minutes</div>
+                            </div>
+                        </div>
+
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-golf-ball"></i>
+                            </div>
+                            <div class="proximity-content">
+                                <div class="proximity-name">Emirates Golf Club</div>
+                                <div class="proximity-distance">12 minutes</div>
+                            </div>
+                        </div>
+
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                            <div class="proximity-content">
+                                <div class="proximity-name">Private Beach Club</div>
+                                <div class="proximity-distance">Direct Access</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <h2 class="contact-title">Schedule Your Private Viewing</h2>
+                    <p class="contact-subtitle">Experience this exceptional property in person with our luxury property specialist.</p>
+
+                    <div class="agent-profile">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=256" alt="Agent" class="agent-photo">
+                        <div class="agent-details">
+                            <h4 class="agent-name">Sarah Al-Mansoori</h4>
+                            <div class="agent-title">Senior Luxury Property Consultant</div>
+                            <div class="agent-credentials">
+                                <span class="credential"><i class="fas fa-award"></i> 15+ Years Experience</span>
+                                <span class="credential"><i class="fas fa-star"></i> Top 1% Luxury Agent</span>
+                            </div>
+                            <div class="agent-contact-methods">
+                                <a href="tel:+971501234567" class="contact-method">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+971 50 123 4567</span>
+                                </a>
+                                <a href="https://wa.me/971501234567" class="contact-method whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                                <a href="mailto:sarah@palmresidences.ae" class="contact-method">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>sarah@palmresidences.ae</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <i class="fas fa-shield-check"></i>
+                            <span>Verified Listing</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure & Confidential</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Licensed Agency</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container fade-in">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-header">
+                            <h3>Request Information</h3>
+                            <p>We'll respond within 2 hours</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">First Name *</label>
+                                <input type="text" class="form-input" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Last Name *</label>
+                                <input type="text" class="form-input" placeholder="Smith" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number *</label>
+                            <div class="phone-input">
+                                <select class="country-code">
+                                    <option value="+971">🇦🇪 +971</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+966">🇸🇦 +966</option>
+                                    <option value="+965">🇰🇼 +965</option>
+                                    <option value="+234">🇳🇬 +234</option>
+                                </select>
+                                <input type="tel" class="form-input phone-number" placeholder="50 123 4567" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Preferred Viewing Time</label>
+                            <select class="form-input">
+                                <option value="">Select a time</option>
+                                <option value="morning">Morning (9AM - 12PM)</option>
+                                <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                                <option value="evening">Evening (5PM - 8PM)</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Message (Optional)</label>
+                            <textarea class="form-input" rows="4" placeholder="Any specific questions or requirements?"></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span>I agree to receive property updates and marketing communications via WhatsApp, email, and SMS</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Send Inquiry via WhatsApp</span>
+                        </button>
+
+                        <div class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            We respect your privacy. Your information is secure and will never be shared.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">PALM RESIDENCES</div>
+                    <p class="footer-tagline">Dubai's Premier Luxury Property Portfolio</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="footer-info">
+                        <p>&copy; 2024 Palm Residences. All rights reserved.</p>
+                        <div class="footer-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Sitemap</a>
+                        </div>
+                    </div>
+                    <div class="footer-credentials">
+                        <span class="credential-badge">
+                            <i class="fas fa-certificate"></i>
+                            RERA Licensed
+                        </span>
+                        <span class="credential-badge">
+                            <i class="fas fa-award"></i>
+                            Luxury Property Specialist
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/971501234567?text=Hi, I'm interested in the AED 85M Palm Jumeirah Villa" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
